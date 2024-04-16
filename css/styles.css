@@ -1,0 +1,29 @@
+@import url(./section/footer.css);
+@import url(./section/header.css);
+@import url(./section/main.css);
+
+
+/* 리셋설정 */
+@import url(./setting/reset.css);
+
+
+/* css var(--) */
+@import url(./variables.css);
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{box-sizing: border-box;
+}
+
+
+
+
+
+  

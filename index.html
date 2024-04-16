@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게스</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css?ver=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shotcut icon" type="img/ico" size="48x48" href="/img/logo.favicon.ico"/>
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/jquery.bxslider.js"></script>
+    <script src="./script/main.js"></script>
+
+</head>
+<body>
+
+<div class="wrap">
+    <header id="header" role="heading">
+        <div class="background"></div>
+        <nav class="navbar">
+          <img class="navbar_logo" src="./img/logo.png">
+          <input type="text" placeholder="Search" class="navbar_search" />
+        </nav>
+        <button class="navbar_burger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        </button>
+        <nav class="top_menu">
+          <a href="./index.html" style="animation-delay: 0.1s">Home</a>
+          <a href="./sub02.html" style="animation-delay: 0.2s">About</a>
+          <a href="#" style="animation-delay: 0.3s">Services</a>
+          <a href="#" style="animation-delay: 0.4s">Products</a>
+          <a href="#" style="animation-delay: 0.5s">Contact</a>
+        </nav>
+        <script type="text/javascript">
+          const toggleMenu = () => {
+            document.body.classList.toggle("open");
+          };
+        </script>
+    </header>
+
+    <a id="MOVE_TOP_BTN" href="#">TOP</a>
+c
+    <main id="main" role="main">
+        <!-- 슬라이드 메인 사진 -->
+        <section id="section" role="section">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="./img/slide01.jpeg" alt="0" style="width:100%" />
+                  <div class="text">GUESS</div>
+                </div>
+          
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="./img/slide2.jpeg" alt="0" style="width:100%" />
+                  <div class="text">GUESS</div>
+                </div>
+          
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="./img/슬라이드2.jpg" alt="0" style="width:100%" />
+                  <div class="text">GUESS</div>
+                </div>
+          
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="./img/kelsey-k-UYT2lYzkK8A-unsplash.jpg" alt="0" style="width:100%" />
+                  <div class="text">GUESS</div>
+                </div>
+          
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="./img/slide2.jpeg" alt="0" style="width:100%" />
+                  <div class="text">GUESS</div>
+                </div>
+          
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="./img/송강 슬라이드.jpeg" alt="0" style="width:100%" />
+                  <div class="text">GUESS</div>
+                </div>
+          
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlides(1)">&#10095;</a>
+              </div>
+              <br/>
+          
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+        </section>
+
+
+        <section id="section" role="section">
+            <h1 class="product_title">BEST SELLERS</h1>
+            <!-- <span class="product_subtitle">Guess의 베스트셀러를 만나보세요</span> -->
+            <!-- 상품 오른쪽 수지 사진 -->
+            <div class="product_1">
+                <img src="./img/게스수지2.jpg"/>
+                <!-- <img src="./img/모델1.jpeg"/> -->
+                <div class="product_text">
+                    <p>여성 오리지날삼각 나시티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 상품 왼쪽 1 -->
+            <div class="product_2">
+                <img src="./img/black2.jpg" alt="img">
+                <div class="product_3_text">
+                    <p>남녀공용 페이즐리 사각 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span></p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 상품 왼쪽 2 -->
+            <div class="product_3">
+                <img src="./img/상품1.jpg" alt="img">
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span></p>
+                </p>
+            </div>
+      </section>
+
+      <!-- 스크롤 이미지 -->
+      <div class="scroll_text">
+        <div class="track">
+          <p>GUESS</p>
+          <p>SEASON OFF</p>
+          <p>GUESS</p>
+          <p><img src="./img/logo.png"></p>
+          <p>GUESS</p>
+          <p>SALE</p>
+          <p><img src="./img/logo.png"></p>
+          <p>GUESS</p>
+          <p>SEASON OFF</p>
+          <p><img src="./img/logo.png"></p>
+          <p>GUESS</p>
+          <p>SALE</p>
+        </div>
+      </div>
+
+      <!-- 수지 픽 화보-->
+      <section id="section" role="section">
+        <h2 class="product5_title">SUZY<br> 2023 S/S<br> SPRING</h2>
+        <ul class="product_5">
+            <li>
+                <div>
+                    <img src="./img/수지0.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+
+            </li>
+
+            <li>
+                <div>
+                    <img src="./img/수지01.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+            </li>
+
+            <li>
+                <div>
+                    <img src="./img/수지03.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+            </li>
+
+            <li>
+                <div>
+                    <img src="./img/수지3.jpg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+            </li>
+
+            <li>
+                <div>
+                    <img src="./img/수지05.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+            </li>
+        </ul>
+      </section>
+
+      <!--청바지 나열-->
+      <section class="section_jean" role="section">
+        <h2 class="product5_title">GUESS JEANS</h2>
+        <p class="product5_subtitle">게스의 FIT! 바지를 Pick!</p>
+        <ul class="product_5">
+            <li>
+                <div>
+                    <img src="./img/고윤정2.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+
+            </li>
+
+            <li>
+                <div>
+                    <img src="./img/바지3.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+            </li>
+
+            <li>
+                <div>
+                    <img src="./img/바지4.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+            </li>
+
+            <li>
+                <div>
+                    <img src="./img/바지6.jpeg" alt="img"/>
+                </div>
+                <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                    <br>
+                    <del>38,000원</del>
+                    <b>34,200원</b>
+                    <span class=""style="color:red"> 10%</span>
+                </p>
+            </li>
+        </ul>
+    </section>
+
+      <!--영상 -->
+    <section id="section" role="section">
+        <video muted autoplay loop>
+            <source src="https://www.guesskorea.com/external/23HS/FIN_Guess_SK_pc.mp4?autoplay=1&mute=1&loop=1&playlist=R2fkjNWRKLA" type="video/mp4">
+        </video>
+    </section>
+
+
+
+        <!--  -->
+        <section class="section_clothes" role="section">
+            <h2 class="product5_title">NEW ARRIVALS</h2>
+            <p class="product5_subtitle">GUESS의 신상품</p>
+            <ul class="product_7">
+                <li>
+                    <div>
+                        <img src="./img/7c2f99b7537cb9ff928e2fdd7453ef33.jpg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+    
+                </li>
+
+
+                <li>
+                    <div>
+                        <img src="./img/송강3.jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+    
+                <li>
+                    <div>
+                        <img src="./img/모델1.jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="./img/옷2.jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+    
+                <li>
+                    <div>
+                        <img src="./img/송강2.jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+
+            </ul>
+
+            <ul class="product_7">
+                <li>
+                    <div>
+                        <img src="./img/옷3.jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+    
+                </li>
+
+
+                <li>
+                    <div>
+                        <img src="./img/모델2.jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+    
+                <li>
+                    <div>
+                        <img src="./img/클래식베이지 팬츠.jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="./img/송강1.webp" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+    
+                <li>
+                    <div>
+                        <img src="./img/게스(GUESS) 2020 봄 컬렉션 화보 고화질 수지 보정, 폰배경화면(2020).jpeg" alt="img"/>
+                    </div>
+                    <p>남성 GO EARTH DAY 가든 그래픽 반팔티
+                        <br>
+                        <del>38,000원</del>
+                        <b>34,200원</b>
+                        <span class=""style="color:red"> 10%</span>
+                    </p>
+                </li>
+
+            </ul>
+        </section>
+
+            <!-- 관련 사이트-->
+    <section id="section" role="section">
+        <div class="product_6">
+            <div class="card">
+                <div class="product_6_img">
+                    <img src="./img/Et si on faisait un peu de tri dans sa lingerie _.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>GUESS</h2>
+                    <span>GUESS UNDERWEAR</span>
+                    <p>Active innerwear made of eco-friendly materials</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="product_6_img">
+                    <img src="./img/게스키즈.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>GUESS</h2>
+                    <span>GUESS KIDS</span>
+                    <p>Guess for active children made from eco-friendly materials</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product_6_img">
+                    <img src="./img/게스 오리지널.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>GUESS</h2>
+                    <span>GUESS ORIGINAL</span>
+                    <p>Guess to show the brand's color with products of history and originality</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="product_6_img">
+                    <img src="./img/미국게스.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>GUESS</h2>
+                    <span>GUESS USA</span>
+                    <p>It presents the wild and wild atmosphere of the western United States</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+    
+
+
+</main>
+
+
+
+
+
+<footer id="footer" role="content_info">
+        <div class="footer_wrapper">
+            <section class='footer_top'>
+                <a href="#" title="footer_Logo">
+                    <img src="./img/logo.png" class='footer_logo' alt="Laplace" />
+                </a>
+                <span class="social_links">
+                    <a href="#" title="Instargram">
+                        <img src="./img/assets/instargram.png" alt="instargram" />
+                    </a>
+                    <a href="#" title="facebook">
+                        <img src="./img/assets/facebook.png" alt="facebook" />
+                    </a>
+                    <a href="#" title="kakao">
+                        <img src="./img/assets/kakao.png" alt="kakao" />
+                    </a>
+                    <a href="#" title="twitter">
+                        <img src="./img/assets/twitter.png" alt="twitter" />
+                    </a>
+                </span>
+            </section>
+            <section class="footer_columns">
+                <section>
+                    <ul>
+                        <h3>회사소개</h3>
+                        <li><a href="#" title="Solution 1">매장안내</a></li>
+                        <li><a href="#" title="Solution 2">이용약관</a></li>
+                        <li><a href="#" title="Solution 3">고객센터</a></li>
+                        <li><a href="#" title="Solution 4">공지사항</a></li>
+                    </ul>
+                </section>
+
+              
+                <section>
+                    <ul>
+                        <h3>사업자정보확인</h3>
+                        <li>
+                            <a href="#" title="API">사업자등록번호</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Pricing">에스크로 서비스 가입확인</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Documentation">통판매업 신고</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Release Notes">주소</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <h3>개인정보처리방침</h3>
+                        <li>
+                            <a href="#" title="API">API</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Documentation">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Release Notes">Release</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <h3>회사소개</h3>
+                        <li>
+                            <a href="#" title="API">GUESS UNDERWEAR</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Pricing">GUESS ORIGINER</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Documentation">GUESS KIDS</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Release Notes">GUSSE USA</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="footer_bottom">
+                <smmall>My company Ltd.<span id="year"></span>.All rights reserved</smmall>
+                <span class="footer_bottom_links">
+                    <a href="#" title="Terms and service">Terms and Services</a>
+                    <a hrfe="#" title="Privacy Policy">Privacy Policy</a>
+                </span>
+            </section>
+        </div>
+    </footer>
+    <script>
+        document.getElemetById("year").innerHTML = new Data().getFullYear();
+    </script>
+</div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/6ba5983699.js" crossorigin="anonymous"></script>

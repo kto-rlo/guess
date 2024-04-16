@@ -1,0 +1,10 @@
+@import url(https://fontawesome.com/);
+
+/* 아이콘을 사용하는데 필요한 부트스트랩의 주소 */
+
+:root{
+    --footer-background:#0E1219;
+    --gray:#595c61;
+    --white:#fff;
+    --black:#000;
+}

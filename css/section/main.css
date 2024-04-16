@@ -1,0 +1,570 @@
+@charset "utf-8";
+/* 메인 */
+
+
+
+#section, .section_jean
+{
+    width: 80%;
+    height: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 60px;
+    /* background-color: lightcoral; */
+    /* border: 1px solid black; */
+
+  }
+
+  .section_clothes{
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 60px;
+    /* background-color: lightcoral; */
+    /* border: 1px solid black; */
+  }
+
+  a#MOVE_TOP_BTN {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 999;
+}
+
+  /* 슬라이드 */
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .slideshow-container .mySlides img {
+    height: 750px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* 여성 오리지날 삼각 나시티 */
+.product_1 img{
+  max-width: 100%;
+  width: 600px;
+  height: 750px;
+  position: absolute;
+  right:10%;
+  top: 3%;
+  z-index: 2;
+}
+
+
+.product_1 p{
+  position: absolute;
+  bottom: 5%;
+  right: 10%;;
+  line-height: 30px;
+}
+
+
+
+/* 남녀공용 페이즐리 사각 반팔티 */
+.product_2 img{
+  width: 230px;
+  height: 300px;
+  position: absolute;
+  left:30%;
+  bottom: 13%;
+  border: 1px solid black;
+}
+
+.product_2 p{
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  line-height: 30px;
+}
+
+/* 남성 GO EARTH DAY 가든 그래픽 반팔티 */
+.product_3 img{
+  width: 230px;
+  height: 300px;
+  position: absolute;
+  left:10%;
+  bottom: 13%;
+  border: 1px solid black;
+}
+
+.product_3 p{
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  line-height: 30px;
+}
+
+
+/* SIMPLE LOGO SEMI OVERFIT */
+.product_4{
+  display: flex;
+  overflow: hidden;
+}
+.product_4 img{
+  width: 900px;
+  height: 800px;
+  position: absolute;
+  left: 10%;
+}
+
+.product_4_text {
+  width: 800px;
+  height: 200px;
+  font-size: 66px;
+  position: absolute;
+  right:10px;
+  bottom: 10%;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 가격지우기 */
+del{
+  font-size: 10px;
+  color: #393939;
+}
+
+  /* BEST seller */
+  .product_title{
+    font-size: 6em;
+    width: 258px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top:10%;
+    left:200px;
+    animation: slide 2s ease-out;
+  }
+
+
+
+  /* 스크롤 텍스트 */
+  .scroll_text{
+    width: 100%;
+    overflow: hidden;
+
+    
+  }
+  .track{
+    position: relative;
+    width: 3800px;
+    animation: scroll-animation 5s linear infinite;
+    
+  }
+
+  .track p{
+    float: left;
+    width: 400px;
+    font-size: 36px;
+  }
+
+  .track img{
+    width: 60px;
+    height: 60px;
+  }
+
+  @keyframes scroll-animation{
+    0%{
+      left: 0;
+    }
+    100%{
+      left: -400px; /* 텍스트 width와 동일 */
+    }
+  }
+  
+
+
+
+
+
+/* .carousel-container {
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  overflow: auto;
+}
+
+.carousel-container::-webkit-scrollbar{
+  display: none;
+}
+
+.y-scroll > .bg {
+  background-color: #548ca8;
+} */
+
+  /* 유튜브 */
+  video {
+    width: 100%;
+  }
+
+
+
+/* 바지 */
+.section_jean{
+  margin: 150px auto 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;;
+  grid-auto-rows: 440px;
+  grid-gap:40px;
+  overflow: hidden;
+  /* background-color: lightcoral; */
+  /* border: 1px solid black; */
+  position: relative;
+}
+.product_5, .product_7{
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.product_5 li{
+  width: 20%; height: 350%;
+  /* border:1px solid black; */
+  list-style: none;
+}
+
+.product_5 li div{
+  width: 350px; height: 420px;
+  overflow: hidden;
+  /* border: 1px solid black;; */
+}
+
+.product_5 li div img, .product_7 li div img{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  /* border: 1px solid red; */
+
+}
+
+.product_5 li p:hover,
+.product_7 li p:hover
+{color: var(--gray);
+}
+
+.product_5 li p
+{
+  width: 100%;
+  height: 50%;
+  font-size: 1rem;
+  text-align: center; 
+  line-height: 50px;
+}
+
+/* GUESS JEANS */
+.product5_title{
+  text-align: center;
+  font-size: 3rem;
+  color: var(--black);
+  font-weight: bold;
+  margin: 30px auto;
+}
+
+/* 게스의 FIT! 바지를 Pick! */
+.product5_subtitle{
+  text-align: center;
+  font-size: 30px;
+  color: var(--gray);
+  margin-bottom: 60px;
+}
+
+/* 하트누르기 */
+.heartBtn {
+  position: absolute;
+  color:red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 상품 카드 */
+.product_6{
+  position: relative;
+  width: 1200x;
+  margin: 150px auto 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;;
+  grid-auto-rows: 440px;
+  grid-gap:40px;
+  /* background-color: lightblue; */
+  z-index: 3;
+}
+
+.card{
+  position: relative;
+  background-color:  #ccc;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+  
+}
+
+.product_6 .card:hover{
+  box-shadow: 0 1px 15px 4px rgba(123,172,255,0.329);
+}
+
+.product_6 .card .product_6_img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.product_6 .card:hover .product_6_img{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+.product_6 .card .content{
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  padding: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.54s;
+ 
+}
+
+.product_6 .card:hover .content{
+  bottom:0;
+}
+
+.product_6 .card:nth-child(1)
+.content{
+  background:linear-gradient(0deg,#183188,transparent);
+}
+
+.product_6 .card:nth-child(2)
+.content{
+  background: linear-gradient(0deg,#ffffff9c,transparent);
+}
+
+.product_6 .card:nth-child(3)
+.content{
+  background: linear-gradient(0deg,#ffc31eab,transparent);
+}
+
+.product_6 .card:nth-child(4)
+.content{
+  background: linear-gradient(0deg,#f682dd,transparent);
+}
+
+.product_6 .card .content h2{
+  margin: 0 0 10px;
+  padding: 0;
+  color:var(--white);
+  font-size: 20px;
+}
+
+.product_6 .card .content span{
+  color: #ffeb3b;
+  font-size: 16px;
+}
+
+.product_6 .card .content ul{
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_6 .card .content ul li{
+  list-style: none;
+}
+
+.product_6 .card .content ul li a{
+  color:var(--white);
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.product_6 .icon{
+  background-color: #ffeb3b;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.product_6 .icon .fa:nth-child(1){
+  font-size: 100px;
+  position: absolute;
+  top: 19%;
+  left: -5%;
+  color: rgba(255,255,255,0.233);
+}
+
+.product_6 .icon .fa:nth-child(2){
+  font-size: 100px;
+  position: absolute;
+  top: 19%;
+  left: 102%;
+  color: rgba(255,255,255,0.233);
+}
+
+.product_6 .icon .fa:hover{
+  cursor: pointer;
+}
+
+.product_6 p, h2 {
+  color:var(--white);
+}
+
+
+/*  */
+.product_7 li{
+  width: 20%; height: auto;
+  /* border:1px solid black; */
+  list-style: none;
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+
+
+
+.product_7 li p
+{
+  width: 100%;
+  height: 50%;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+
+
+  /* 베스트셀러 애니메이션 */
+  @keyframes slide {
+    from {
+      left:-100px;
+      opacity: 0;
+    }
+    to{
+      left:200px;
+      opacity: 1;
+    }
+  };
+
+  @keyframes disappear {
+    from{
+      left:200px;
+      opacity: 1;
+    }
+    to{
+      left:-100px;
+      opacity: 0;
+    }
+  };
+
+      /* 유튜브 */
+      @media(max-width:664px) {
+        #section {
+          height: auto;
+        }
+        video {
+          height: 800px;
+        }
+        .text p {
+          font-size: 24rem;
+        }
+      }
